@@ -1,0 +1,13 @@
+$global-max-width: 1000px;
+$global-lr-padding: 0 10px;
+
+@mixin wrap {
+  width: 100%;
+  max-width: $global-max-width;
+  margin: 0 auto;
+}
+
+@mixin padded-wrap {
+  @include wrap;
+  padding: $global-lr-padding;
+}
